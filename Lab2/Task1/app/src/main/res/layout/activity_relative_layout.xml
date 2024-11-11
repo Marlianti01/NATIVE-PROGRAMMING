@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/relativeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Relative Layout"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/relativeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter text here"/>
+
+    <TextView
+        android:id="@+id/additionalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Text Below EditText"
+        android:layout_below="@id/relativeEditText"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:onClick="finish"
+        android:layout_below="@id/additionalText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
